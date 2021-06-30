@@ -3,6 +3,8 @@
 body=`pwd`/bodyFile.txt
 pwd > body
 server=`hostname -s` >> $body 
-to=sijk416@gmail.com
-mail -s "Testing mail from AWS" $to < $body
+#to=sijk416@gmail.com
+#mail -s "Testing mail from AWS" $to < $body
+echo "Server is $server" >> $body
+cat $body
 
